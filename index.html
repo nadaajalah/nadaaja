@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>AI Lingkungan</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- ================= LOGIN ================= -->
+<div class="login-body" id="loginPage">
+  <div class="login-box fade-in">
+    <h1>🌱 AI Lingkungan</h1>
+    <p>Klasifikasi & Edukasi Sosial</p>
+
+    <input type="text" id="username" placeholder="Username">
+    <input type="password" id="password" placeholder="Password">
+
+    <button onclick="login()">Login</button>
+  </div>
+</div>
+
+<!-- ================= DASHBOARD ================= -->
+<div class="dashboard-body" id="dashboardPage" style="display:none;">
+
+  <header>
+    <h2>🌍 Klasifikasi Lingkungan Berbasis AI</h2>
+    <button onclick="logout()">Logout</button>
+  </header>
+
+  <section class="card slide-up">
+    <h3>Upload Gambar Produk</h3>
+
+    <input type="file" id="imageUpload">
+
+    <input type="text" placeholder="Nama Produk">
+
+    <select>
+      <option>Kelas A</option>
+      <option>Kelas B</option>
+      <option>Kelas C</option>
+    </select>
+
+    <select>
+      <option>Laki-laki</option>
+      <option>Perempuan</option>
+    </select>
+
+    <button class="upload-btn">🔍 Klasifikasi</button>
+  </section>
+
+  <section class="info fade-in">
+    <h4>📘 Edukasi Sosial</h4>
+    <p>
+      Sistem ini membantu mengklasifikasikan produk ramah lingkungan
+      sekaligus meningkatkan kesadaran sosial terhadap keberlanjutan lingkungan.
+    </p>
+  </section>
+
+</div>
+
+<!-- ================= SCRIPT ================= -->
+<script>
+function login() {
+  const user = document.getElementById("username").value;
+  const pass = document.getElementById("password").value;
+
+  if (user && pass) {
+    document.getElementById("loginPage").style.display = "none";
+    document.getElementById("dashboardPage").style.display = "block";
+  } else {
+    alert("Username dan password wajib diisi!");
+  }
+}
+
+function logout() {
+  document.getElementById("dashboardPage").style.display = "none";
+  document.getElementById("loginPage").style.display = "flex";
+}
+</script>
+
+</body>
+</html>
