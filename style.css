@@ -14,12 +14,13 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100vh;
 }
 
 .login-box {
   background: white;
   padding: 40px;
-  border-radius: 15px;
+  border-radius: 18px;
   text-align: center;
   width: 320px;
 }
@@ -36,7 +37,7 @@ body {
   border: none;
   padding: 12px;
   width: 100%;
-  border-radius: 8px;
+  border-radius: 10px;
   cursor: pointer;
 }
 
@@ -57,15 +58,15 @@ header button {
   border: none;
   color: white;
   padding: 8px 14px;
-  border-radius: 6px;
+  border-radius: 8px;
 }
 
 .card {
   background: white;
   color: black;
   padding: 20px;
-  border-radius: 15px;
-  max-width: 400px;
+  border-radius: 18px;
+  max-width: 450px;
   margin-top: 20px;
 }
 
@@ -75,13 +76,27 @@ header button {
   margin: 8px 0;
 }
 
+.card label {
+  display: block;
+  margin: 8px 0;
+}
+
 .upload-btn {
   background: #2ecc71;
   border: none;
   padding: 12px;
   color: white;
   width: 100%;
-  border-radius: 8px;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+/* EDUKASI */
+.edukasi {
+  background: #ecf9f1;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 10px;
 }
 
 /* ANIMASI */
