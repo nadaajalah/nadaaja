@@ -1,0 +1,104 @@
+* {
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: linear-gradient(135deg, #2ecc71, #27ae60);
+  min-height: 100vh;
+}
+
+/* LOGIN */
+.login-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-box {
+  background: white;
+  padding: 40px;
+  border-radius: 15px;
+  text-align: center;
+  width: 320px;
+}
+
+.login-box input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+}
+
+.login-box button {
+  background: #27ae60;
+  color: white;
+  border: none;
+  padding: 12px;
+  width: 100%;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* DASHBOARD */
+.dashboard-body {
+  padding: 20px;
+  color: white;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header button {
+  background: #e74c3c;
+  border: none;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 6px;
+}
+
+.card {
+  background: white;
+  color: black;
+  padding: 20px;
+  border-radius: 15px;
+  max-width: 400px;
+  margin-top: 20px;
+}
+
+.card input, .card select {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+}
+
+.upload-btn {
+  background: #2ecc71;
+  border: none;
+  padding: 12px;
+  color: white;
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* ANIMASI */
+.fade-in {
+  animation: fadeIn 1.2s ease;
+}
+
+.slide-up {
+  animation: slideUp 1s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { transform: translateY(30px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
